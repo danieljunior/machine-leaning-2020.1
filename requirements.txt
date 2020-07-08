@@ -2,3 +2,6 @@ scikit-learn
 python-graphviz
 pandas
 seaborn
+gensim
+nltk
+tqdm
