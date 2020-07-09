@@ -5,3 +5,4 @@ seaborn
 gensim
 nltk
 tqdm
+scikit-posthocs
