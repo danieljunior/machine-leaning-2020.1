@@ -1,6 +1,6 @@
 FROM continuumio/anaconda3:2019.10
 
-RUN apt-get update -y && apt-get install -y cython
+RUN apt-get update -y && apt-get install -y cython libgl1-mesa-glx
 RUN mkdir -p /app
 COPY requirements.txt /app
 WORKDIR /app

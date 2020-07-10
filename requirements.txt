@@ -1,8 +1,9 @@
 scikit-learn
-python-graphviz
 pandas
 seaborn
 gensim
 nltk
 tqdm
 scikit-posthocs
+orange3
+autorank
