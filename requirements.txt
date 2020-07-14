@@ -4,6 +4,6 @@ seaborn
 gensim
 nltk
 tqdm
-scikit-posthocs
-orange3
+# scikit-posthocs
+# orange3
 autorank

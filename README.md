@@ -2,20 +2,31 @@
 
 * Dataset: https://www.kaggle.com/ferraz/acordaos-tcu
 * Objetivo:
-    * Quem é foi o relator responsável pelo acórdão?
-    * Qual o tipo de processo do acórdão?
-* Como:
-    * Análise exploratória dos dados
-    * Representações do texto: TF-IDF, word2Vec, https://github.com/IBM/WordMoversEmbeddings, https://github.com/UKPLab/sentence-transformers, https://github.com/XiaoqiJiao/COLING2018 - outros(https://github.com/Separius/awesome-sentence-embedding)
-    * Classificador: SVM, MLP(sklearn), Custom NN (tf.keras in TensorFlow 2.0)[https://www.tensorflow.org/guide/keras]
-    * Testes de Hipótese
+    * O objetivo deste experimento é avaliar o desempenho de diferentes classificadores e representações textuais na resposta a seguinte pergunta:
+        * Quem é foi o relator responsável pelo acórdão?
+* Etapas:
+    * Análise Exploratória dos Dados
+    * Representações do texto: TF-IDF, word2Vec pré-treinado e word2vec treinado na base
+    * Classificadores: KNN, SVM e MLP(sklearn)
+    * Avaliação de Resultados com Testes de Hipótese
 
-## Para executar os notebooks
-* Buildar a imagem docker: docker build -t ml .
-* Criar container docker: docker run -itd --rm -v ${PWD}:/app -w /app -p 8889:8888 --name ml ml bash
-* Acessar o container:  docker exec -it ml bash
-* Iniciar jupyternotebook: jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='ml' &
-* Acessar no browser: http://localhost:8888/lab
+## Como usar?
 
-## Requerimentos
-- Docker
+* Requerimento: ter o Docker instalado
+
+* Construir a imagem docker: 
+` docker build -t ml .`
+
+* Criar container docker: 
+` docker run -itd --rm -v ${PWD}:/app -w /app -p 8889:8888 --name ml ml bash `
+
+* Acessar o container:  
+`docker exec -it ml bash`
+
+* Para executar o experimento, após acessar o container basta executar o seguinte comando:
+`python src/experiment.py`
+
+* Iniciar jupyternotebook: 
+`jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='ml' &`
+
+* Para acessar o jupyter notebook, inserir a url [http://localhost:8889/lab] no browser e usar o token 'ml'
