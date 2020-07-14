@@ -29,4 +29,4 @@
 * Iniciar jupyternotebook: 
 `jupyter lab --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='ml' &`
 
-* Para acessar o jupyter notebook, inserir a url [http://localhost:8889/lab] no browser e usar o token 'ml'
+* Para acessar o jupyter notebook, acessar a url (http://localhost:8889/lab) no browser e usar o token 'ml'
