@@ -12,7 +12,10 @@
 
 ## Como usar?
 
-* Requerimento: ter o Docker instalado
+* Requerimentos: 
+   * Docker
+   * Baixar o dataset [aqui](https://drive.google.com/drive/folders/15GYePdDHzwG2jkk9HEZsttp5G9TIWX0S?usp=sharing), criar uma pasta 'datasets' na raiz do projeto e adicionar os csvs extraídos.
+   * Baixar o arquivo de embedding [aqui](http://143.107.183.175:22980/download.php?file=embeddings/word2vec/cbow_s100.zip) e extraí-lo para a raiz do projeto
 
 * Construir a imagem docker: 
 ` docker build -t ml .`
