@@ -1,4 +1,4 @@
-# Trabalho Final machine-leaning-2020.1
+# Trabalho Final machine-learning-2020.1
 
 * Dataset: https://www.kaggle.com/ferraz/acordaos-tcu
 * Objetivo:
